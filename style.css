@@ -190,3 +190,10 @@ section {
 	-ms-flex-pack: center;
 	justify-content: center;
 }
+
+/* ********************************* */
+
+.gc.offer > .rw {
+	justify-content: space-between;
+	height: 100%;
+}
