@@ -1,0 +1,170 @@
+/*! CSS Used from: Embedded */
+.bl,
+.bl-a a {
+	color: var(--primary-color);
+}
+.bgbl {
+	background-color: var(--primary-color);
+}
+*,
+:after,
+:before {
+	box-sizing: inherit;
+}
+.lf {
+	text-align: left;
+}
+.rt {
+	text-align: right;
+}
+.pd {
+	padding: 10px;
+}
+.pd-dn {
+	padding-bottom: 10px;
+}
+.-mg {
+	margin: 0 !important;
+}
+.grid {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: var(--gtc);
+	grid-template-columns: var(--gtc);
+	grid-gap: var(--gg);
+}
+.btn {
+	line-height: 2;
+	text-decoration: none;
+	text-align: center;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 1px -2px rgba(0, 0, 0, 0.2),
+		0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	margin: 5px 15px;
+	width: auto;
+	padding: 0 25px;
+	display: inline-block;
+}
+.i {
+	font-style: italic;
+}
+.sm {
+	font-size: 0.8rem;
+}
+.bggry {
+	background-color: #ebebeb;
+}
+.bl,
+.bl-a a {
+	color: #607d8b;
+}
+.bgbl {
+	background-color: #607d8b;
+}
+.wht,
+a.wht {
+	color: #fff !important;
+}
+main section .cn {
+	max-width: 900px;
+	margin: 0 auto;
+}
+@media only screen and (min-width: 400px) {
+	main section {
+		padding: 15px;
+	}
+	main section .cn {
+		padding: 10px;
+	}
+}
+@media only screen and (max-width: 399px) {
+	main section,
+	main section .cn {
+		padding: 5px;
+	}
+}
+.bdr {
+	border: 1px solid #dadada;
+}
+.hov:hover {
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+section {
+	padding: 10px;
+}
+.cn {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.btn {
+	color: var(--primary-color) !important;
+}
+.grid {
+	--gtcx: 320px;
+	--gtcmax: 1fr;
+	--gtcsz: minmax(var(--gtcx), var(--gtcmax));
+	--gtc: repeat(auto-fit, var(--gtcsz));
+	--gg: 20px;
+	--gce: span 1;
+	--gre: span 1;
+	--gx: 1;
+	display: flex;
+	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: var(--gtc);
+	grid-gap: var(--gg);
+}
+.grid > * {
+	flex: 1 1 var(--gtcx);
+	grid-column-end: var(--gce);
+	grid-row-end: var(--gre);
+}
+.grid > .full {
+	flex: 0 0 100%;
+	grid-column: 1 / -1;
+}
+.g2 {
+	--gx: 2;
+}
+.g3 {
+	--gx: 3;
+}
+.g4 {
+	--gx: 4;
+}
+.g2,
+.g3,
+.g4 {
+	--gw: calc(100% / var(--gx));
+	--gtcx: calc(var(--gw) - var(--gg));
+	--gtc: repeat(var(--gx), [cl] var(--gtcsz));
+	--gcx: var(--gx);
+}
+.g4 > .cl {
+	flex: var(--gcx);
+	--gce: span var(--gcx);
+}
+.grid > .c1 {
+	--gcx: 1;
+}
+.grid > .c3 {
+	--gcx: 3;
+}
+.gc {
+	container-type: inline-size;
+	grid-column: 1 / -1;
+}
+.gc .gc {
+	grid-column: initial;
+}
+.grid .grid {
+	height: 100%;
+}
+.cn {
+	container-type: inline-size;
+}
+.bottom {
+	bottom: 0;
+}
+.grid .bottom {
+	align-self: flex-end;
+}
