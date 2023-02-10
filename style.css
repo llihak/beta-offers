@@ -168,3 +168,25 @@ section {
 .grid .bottom {
 	align-self: flex-end;
 }
+
+.rw {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex: 1 100%;
+	flex: 1 100%;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+.rw .cl {
+	-ms-flex: 1 100%;
+	flex: 1 100%;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.rw .cl.ctr {
+	-ms-flex-item-align: center;
+	-ms-grid-row-align: center;
+	align-self: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
